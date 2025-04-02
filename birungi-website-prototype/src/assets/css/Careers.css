@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .career-page {
+    text-align: center;
+  }
+  
+  section{
+    height: 400px;
+  }
+  
+  .hero-section {
+    background: gray;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .why-work-here {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    height: auto;
+  }
+  
+  .whycontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .whyworkhere-container{
+    width: 1000px;
+    text-align: start;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    padding: 30px;
+    gap: 20px;
+  }
+  
+  .whyh2{
+    font-size: 40px;
+  }
+  
+  .whyp{
+    max-width: 800px;
+  }
+  
+  .image-box {
+    width: 200px;
+    height: 500px;
+    background: gray;
+  }
+  
+  .featured-positions {
+    padding: 40px;
+  }
+  
+  .positions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .position button {
+    background: orange;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .footer {
+    background: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    background: gray;
+  }
+  
+  .app-links {
+    margin-top: 10px;
+  }
+  
