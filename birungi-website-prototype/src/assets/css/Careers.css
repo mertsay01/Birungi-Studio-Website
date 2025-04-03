@@ -1,109 +1,145 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-  }
-  
-  .career-page {
-    text-align: center;
-  }
-  
-  section{
-    height: 400px;
-  }
-  
-  .hero-section {
-    background: gray;
-    color: white;
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .why-work-here {
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    height: auto;
-  }
-  
-  .whycontainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-  }
-  
-  .whyworkhere-container{
-    width: 1000px;
-    text-align: start;
-  }
-  
-  .images {
-    display: flex;
-    justify-content: center;
-    height: 500px;
-    padding: 30px;
-    gap: 20px;
-  }
-  
-  .whyh2{
-    font-size: 40px;
-  }
-  
-  .whyp{
-    max-width: 800px;
-  }
-  
-  .image-box {
-    width: 200px;
-    height: 500px;
-    background: gray;
-  }
-  
-  .featured-positions {
-    padding: 40px;
-  }
-  
-  .positions {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .position button {
-    background: orange;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .footer {
-    background: black;
-    color: white;
-    padding: 20px;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .icon {
-    width: 30px;
-    height: 30px;
-    background: gray;
-  }
-  
-  .app-links {
-    margin-top: 10px;
-  }
-  
+  background-color: #f5f5f5;
+}
+
+.career-page {
+  text-align: center;
+}
+
+.hero-section {
+  height: 50rem;
+  box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.5);
+}
+
+.hero-section-img-container{
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-section-text-container{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+}
+
+.hero-section-h1{
+  font-size: 7rem;
+}
+
+.hero-section-p{
+  font-size: 4rem;
+}
+
+.why-work-here {
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+}
+
+.why-work-here-text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.why-work-here-wrapper{
+  display: flex;
+  flex-direction: column; 
+  margin-left: 15rem;
+  text-align: left;
+  gap: 3rem;
+}
+
+.why-work-here-h1{
+  font-size: 5rem;
+  margin: 0;
+}
+
+.why-work-here-p{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.why-work-here-img-container{
+  width: 50%;
+}
+
+.why-work-here-img-wrapper{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.why-work-here-img{
+  background-image: url("../img/Screenshot_1.png");
+  width: 25%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.why-work-here-img-2{
+  background-image: url("../img/Screenshot_2.png");
+  width: 25%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.featured-positions {
+  background: lightgrey;
+  height: 65rem;
+  padding: 4rem;
+}
+
+.positions-title{
+  font-size: 4rem;
+}
+
+.positions {
+  margin-top: 10rem;
+}
+
+.positions-wrapper-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.positions-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.positions-div{
+  width: 30rem;
+  height: 10rem;
+  background: grey;
+  border-radius: 1rem;
+}
+
+.position button {
+  background: orange;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.5rem;
+}
