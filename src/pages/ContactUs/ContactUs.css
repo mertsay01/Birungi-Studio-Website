@@ -95,4 +95,9 @@
   .submit-btn:hover {
     background-color: rgb(26, 25, 25);
   }
-  
+  .contact-section {
+    background: lightgrey;
+    height: auto;
+    width: auto;
+    padding: 4rem;
+  }

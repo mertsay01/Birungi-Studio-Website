@@ -21,6 +21,7 @@ const ContactUs = () => {
         </p>
 
         {/* Contact Form */}
+        <section className="contact-section">
         <form className="contact-form">
           <div className="form-group">
             <input type="text" id="name" placeholder="Enter your name" required />
@@ -36,6 +37,9 @@ const ContactUs = () => {
 
           <button type="submit" className="submit-btn">Send Message</button>
         </form>
+
+        </section>
+        
       </div>
     </div>
   );

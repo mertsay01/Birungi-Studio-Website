@@ -1,0 +1,75 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: #131212;
+    color: white;
+    flex-wrap: wrap;
+    max-height: 100px;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .footer-left a {
+    margin-right: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .footer-left a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .store-badge {
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .footer-right {
+      justify-content: center;
+    }
+  
+    .footer-left a {
+      margin-right: 1rem;
+    }
+  }
+  .footer-heading {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  .social-icons {
+    display: flex;
+    gap: 0;
+    color: white;
+  }
+  
+  .social-icons a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ff9800; /* Optional: highlight on hover */
+  }
+  
+  .footer-left p {
+    font-size: 0.9rem; /* or smaller if needed */
+  }
+  
