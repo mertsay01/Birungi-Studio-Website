@@ -6,6 +6,7 @@ import Careers from './pages/Careers/Careers';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
+import Footer from './Components/Footer/Footer';
 
 function App ()  {
   
@@ -20,7 +21,7 @@ function App ()  {
         <Route path='/contact-us' element={<ContactUs />}/>
       </Routes>
       
-      
+      <Footer />
     </Router>
   )
 }

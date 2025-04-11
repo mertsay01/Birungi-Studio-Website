@@ -1,0 +1,99 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: #F36E26;
+    color: white;
+    flex-wrap: wrap;
+  }
+  .footer-heading {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: rgb(19, 18, 18);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10%;
+  }
+  
+  
+  .footer-left a {
+    margin-right: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  
+  .footer-left a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .store-badge {
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .footer-right {
+      justify-content: center;
+    }
+  
+    .footer-left a {
+      margin-right: 1rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .footer-right {
+      justify-content: center;
+    }
+  
+    .footer-left a {
+      margin-right: 1rem;
+    }
+  }
+  .social-icons {
+    display: flex;
+    gap: -1rem;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .social-icons a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #0e0d0d; /* Optional: highlight on hover */
+  }
+  .store-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.store-buttons img {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+}
