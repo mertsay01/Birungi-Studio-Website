@@ -13,9 +13,19 @@ export default function Footer() {
           <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin size={40}/></a>
           <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram size={40}/></a>
           <a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter size={40}/></a>
-        </div>
-        
+        </div> 
       </div>
+
+      <div className="footer-middle">
+        <p className="footer-heading">Contact us on</p>
+        <div className="footer-contact">
+          <a href="support@birungi.studio" target="_blank">Support email</a>
+        
+          <a href="business@birungi.studio" target="_blank">Business email</a>
+        </div> 
+      </div>
+
+
 
       <div className="footer-right">
         <div className="store-buttons">
