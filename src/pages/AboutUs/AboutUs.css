@@ -1,0 +1,56 @@
+.our-story {
+    padding: 4rem 2rem;
+    background-color: #0f0f0f;
+    text-align: center;
+}
+
+.our-story h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 3rem;
+}
+.story-head{
+    color:white;
+}
+
+.story-columns {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.story-column {
+    flex: 1 1 400px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.story-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.story-column p {
+    font-size: 24px;
+    line-height: 1.6;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    color: white;
+    font-family: "TW Cen MT", sans-serif;
+}
+.story-column h1{
+    color: white;
+    font-family: "TW Cen MT", sans-serif;
+}
+.story-column img.bs-about {
+    height: 80px !important;
+    width: auto !important;
+  }
+  
