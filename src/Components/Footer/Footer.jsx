@@ -19,11 +19,11 @@ const Footer = () => {
       </div>
 
       <div className="footer-right">
+        <div className="store-buttons">
         <img src={googlePlay1} alt="Get it on Google Play" className="store-badge" />
         <img src={Applestore1} alt="Download on the App Store" className="store-badge" />
+        </div>       
       </div>
     </footer>
-  )
+  );
 }
-
-export default Footer
