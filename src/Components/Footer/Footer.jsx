@@ -19,9 +19,9 @@ export default function Footer() {
       <div className="footer-middle">
         <p className="footer-heading">Contact us on</p>
         <div className="footer-contact">
-          <a href="support@birungi.studio" target="_blank">Support email</a>
+          <p>Support email: support@birungi.studio</p>
         
-          <a href="business@birungi.studio" target="_blank">Business email</a>
+          <p>Business email: business@birungi.studio</p>
         </div> 
       </div>
 

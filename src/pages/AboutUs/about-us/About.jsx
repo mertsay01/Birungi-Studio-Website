@@ -2,27 +2,35 @@ import './About.css'
 
 function About() {  
     return (
-        <section className='about'>
-            <div className='Logo-section'>
-                <div className="Image-logo"></div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    In dicta nostrum quod reprehenderit quaerat officia quo ipsa iure doloribus.
-                    Sint maxime sapiente natus eligendi deserunt quasi aut. Voluptas, quis quisquam!</p>
-            </div>
-            <div className='About-us-section'>
-            <h3>Why Are we here</h3>
-                <div className="About1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Cum, reprehenderit quia! Commodi voluptatem culpa officia exercitationem quibusdam,
-                         quo at consequatur recusandae totam blanditiis! Explicabo enim hic accusantium dolorem, illum quam.</p>
-                            <br />
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Cum, reprehenderit quia! Commodi voluptatem culpa officia exercitationem quibusdam,
-                         quo at consequatur recusandae totam blanditiis! Explicabo enim hic accusantium dolorem, illum quam.</p>
-                </div>
-               
-            </div>
-          </section>
+ 
+        <section className="our-story-container">
+        <h2 className="our-story-title">OUR STORY</h2>
+  
+        <div className="story-row">
+          <div className="story-image"></div>
+          <div className="story-content">
+            <h3 className="story-heading">LOREM IPSUM DOLOR SIT</h3>
+            <p className="story-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis eget urna mattis placerat. Cras
+              sed magna aliquet, felis ut, mollis quam, quis cursus ipsum. Sed nec nisl non quam sodales varius. Sed
+              venenatis hendrerit libero, vel ultrices dolor condimentum a. Etiam sed nunc libero. Fusce dignissim
+              porttitor.
+            </p>
+          </div>
+        </div>
+  
+        <div className="story-row reverse">
+          <div className="story-image"></div>
+          <div className="story-content">
+            <h3 className="story-heading">LOREM IPSUM DOLOR SIT</h3>
+            <p className="story-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis eget urna mattis placerat. Cras
+              sed magna aliquet, felis ut, mollis quam, quis cursus ipsum. Sed nec nisl non quam sodales varius. Sed
+              venenatis hendrerit libero, vel ultrices dolor condimentum a. Etiam sed nunc libero.
+            </p>
+          </div>
+        </div>
+      </section>
     );
 }
 

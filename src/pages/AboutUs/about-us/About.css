@@ -1,86 +1,65 @@
-*,*::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
 
 
 
-
-.about{
-    width: 100%;
-    height: 70vh;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.Logo-section{
-    margin: 2rem;
-    width: 30%;
-    height: 30vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.Image-logo{
-    width: 10rem;
-    height: 10rem;
-    background-image: url(../../../assets/345534306d09f13787c016b81a2be872.png);
-    background-color: rgba(255, 255, 255, 0.9);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-    margin: 2rem;
-    border: 2px solid white;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-.Logo-section p{
+.our-story-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 16px;
+  }
+  
+  .our-story-title {
     font-size: 18px;
-}
 
-
-
-h3{
-    font-size: 50px;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-}
-
-.About-us-section{
+    margin-bottom: 32px;
+  }
+  
+  .story-row {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 30%;
-    height: 40vh;
- 
-}
-
-.About1{
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+  
+  .story-image {
     width: 100%;
-    height: 28vh;
- 
-}
-
-.About2{
+    height: 250px;
+    background-color: #d1d1d1;
+  }
+  
+  .story-content {
     width: 100%;
-    height: 28vh;
-   
-}
-
-
-
+  }
+  
+  .story-heading {
+    font-size: 18px;
+ 
+    margin-bottom: 16px;
+  }
+  
+  .story-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* For the second row, we'll reverse the order on desktop */
+  .story-row.reverse .story-image {
+    height: 200px;
+  }
+  
+  /* Media query for desktop layout */
+  @media (min-width: 768px) {
+    .story-row {
+      flex-direction: row;
+    }
+  
+    .story-image,
+    .story-content {
+      width: 50%;
+    }
+  
+    /* For the second row, we'll reverse the order on desktop */
+    .story-row.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  
