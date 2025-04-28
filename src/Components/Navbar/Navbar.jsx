@@ -1,12 +1,26 @@
 
 import { NavLink } from 'react-router-dom';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo2.png'
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [showScrollTop, setShowScrollTop] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          setShowScrollTop(window.scrollY > 300);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+    
+      const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
 
   return (
     <nav className="navbar">
@@ -15,8 +29,6 @@ export const Navbar = () => {
             <img src={logo} alt="logo" className='logo' />
         </NavLink>
         </div>
-        
-        
         <button className='menu-toggle' onClick={() => setIsOpen(!isOpen)}>
          ☰
         </button>
@@ -31,6 +43,12 @@ export const Navbar = () => {
             <NavLink to ='/contact-us' className={({ isActive}) => isActive ? "active": ""}>Contact Us</NavLink>
             </li>
         </ul>
+
+        {showScrollTop && (
+         <button className="scroll-to-top" onClick={scrollToTop} aria-label="Scroll to top">
+           ↑
+         </button>
+        )}
       
     </nav>
   )
