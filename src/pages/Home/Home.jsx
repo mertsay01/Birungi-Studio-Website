@@ -5,9 +5,12 @@ import '../../Components/GamesSection/GamesSection'
 import GamesSection from "../../Components/GamesSection/GamesSection";
 import BeeAnimation from "../../Components/BeeAnimation/BeeAnimation";
 
+
 const Home = () => {
   return (
+   
     <div className="hero-container">
+
       <ImageSlider /> 
        <section className="home">
         <div className="home-content">

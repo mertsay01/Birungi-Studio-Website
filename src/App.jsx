@@ -8,6 +8,7 @@ import AboutUs from './pages/AboutUs/About-us';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Footer from './Components/Footer/Footer'
 
+
 function App ()  {
   
   return (
@@ -20,7 +21,7 @@ function App ()  {
         <Route path = '/about-us' element={<AboutUs />}/>
         <Route path='/contact-us' element={<ContactUs />}/>
       </Routes>
-      
+
       <Footer />
       
     </Router>
