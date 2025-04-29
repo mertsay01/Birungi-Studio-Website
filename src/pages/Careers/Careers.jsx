@@ -1,6 +1,6 @@
-import "../assets/css/Careers.css";
+import "../Careers/Careers.css";
 
-export default function CareerPage() {
+const Careers = () => {
     return (
       <div className="career-page">
         <section className="hero-section">
@@ -65,4 +65,6 @@ export default function CareerPage() {
         </section>
       </div>
     );
-  }
+  };
+  
+  export default Careers;
