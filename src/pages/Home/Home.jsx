@@ -3,7 +3,9 @@ import ImageSlider from "../../Components/ImageSlider/ImageSlider";
 import './Home.css';
 import '../../Components/GamesSection/GamesSection'
 import GamesSection from "../../Components/GamesSection/GamesSection";
-import BeeAnimation from "../../Components/BeeAnimation/BeeAnimation";
+//import BeeAnimation from "../../Components/BeeAnimation/BeeAnimation";
+import Partner from "../../Components/Partner/partner";
+
 
 
 const Home = () => {
@@ -22,7 +24,7 @@ const Home = () => {
         
         </section> 
         <GamesSection />
-      
+        <Partner />
       
     </div>
     
