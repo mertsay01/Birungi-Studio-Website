@@ -1,5 +1,6 @@
 import About from "./about-us/About";
 import Image from "./image-body/Image";
+import Partner from "../../Components/Partner/partner";
 
 function AboutUs() {
   return (
@@ -7,6 +8,7 @@ function AboutUs() {
 
         <Image />
         <About />
+        <Partner />
 
       </>
   );
