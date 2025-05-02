@@ -5,8 +5,8 @@ function Image() {
         <section className='image-body'>
         <div className='image'>
             
-            <h1>"BIRUNGI"</h1>
-            <h2>lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+            <h1>BIRUNGI Studio</h1>
+            <h2>Combining Gaming with Social Impact missions to bring together enthusiastic gamers and nature enthusiasts</h2>
         </div>
         </section>
     );

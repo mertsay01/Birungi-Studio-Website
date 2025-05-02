@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo2.png'
 
+import LanguageSelector from "../../Components/LanguageSelector/LanguageSelector";
+
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [showScrollTop, setShowScrollTop] = useState(false);
@@ -41,6 +43,9 @@ export const Navbar = () => {
             </li>
             <li>
             <NavLink to ='/contact-us' className={({ isActive}) => isActive ? "active": ""}>Contact Us</NavLink>
+            </li>
+            <li>
+            <LanguageSelector onLanguageChange={(lang) => console.log(`Language changed to: ${lang}`)} showOnLoad={false} currentLanguage="en" />
             </li>
         </ul>
 

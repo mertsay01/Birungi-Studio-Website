@@ -1,26 +1,25 @@
 .home {
-    height: 40vh; /* Full screen height */
-    display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center; /* Vertical center */
-    text-align: center;
-    background-color: #fff; /* Optional background */
-    padding: 0 1rem;
-  }
-  
-  .home-content {
-    max-width: 600px; /* Optional: controls width of content */
-  }
-  
-  .home h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-family: "TW Cen MT", sans-serif;
-    font-weight: bold;
-  }
-  
-  .home p {
-    font-size: 1.2rem;
-    font-family: "TW Cen MT", sans-serif;
-  }
-  
+  height: 40vh; /* Full screen height */
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center; /* Vertical center */
+  text-align: center;
+  background-color: #fff; /* Optional background */
+  padding: 0 1rem;
+}
+
+.home-content {
+  max-width: 600px; /* Optional: controls width of content */
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: "TW Cen MT", sans-serif;
+  font-weight: bold;
+}
+
+.home p {
+  font-size: 1.2rem;
+  font-family: "TW Cen MT", sans-serif;
+}

@@ -3,11 +3,21 @@ import ImageSlider from "../../Components/ImageSlider/ImageSlider";
 import './Home.css';
 import '../../Components/GamesSection/GamesSection'
 import GamesSection from "../../Components/GamesSection/GamesSection";
-import BeeAnimation from "../../Components/BeeAnimation/BeeAnimation";
+//import BeeAnimation from "../../Components/BeeAnimation/BeeAnimation";
+import Partner from "../../Components/Partner/partner";
+import ImpactCard from './ImpactCard/ImpactCard';
+
+
+
+
+
+
 
 const Home = () => {
   return (
+   
     <div className="hero-container">
+
       <ImageSlider /> 
        <section className="home">
         <div className="home-content">
@@ -18,8 +28,9 @@ const Home = () => {
         </div>
         
         </section> 
+        <ImpactCard />
         <GamesSection />
-      
+        <Partner />
       
     </div>
     
