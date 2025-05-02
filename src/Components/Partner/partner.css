@@ -1,8 +1,8 @@
 .partners-section{
     text-align: center;
     padding: 2rem;
-    background: gray;
     margin-bottom: 2rem;
+    position: relative;
 }
 
 .partners-title{
@@ -16,6 +16,8 @@
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 1rem;
+    animation: scrollPartners 20s linear infinite;
+    width: max-content;
 }
   
 .partners-logo{
@@ -24,5 +26,80 @@
     object-fit: contain;
     border-radius: 0.8rem;
     box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
 }
-  
+.partners-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 3rem; /* Space for arrows */
+}
+.partners-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    user-select: none;
+}
+
+.partners-arrow-left {
+    left: 10px;
+}
+
+.partners-arrow-right {
+    right: 10px;
+}
+
+.partners-arrow::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    display: inline-block;
+}
+
+.partners-arrow-left::before {
+    transform: rotate(-135deg); /* Left arrow */
+}
+
+.partners-arrow-right::before {
+    transform: rotate(45deg); /* Right arrow */
+}
+
+/* Animation for scrolling */
+@keyframes scrollPartners {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Adjust based on content width */
+    }
+}
+
+/* Pause animation on hover */
+.partners-logos:hover {
+    animation-play-state: paused;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .partners-logo {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .partners-arrow {
+        width: 30px;
+        height: 30px;
+    }
+}

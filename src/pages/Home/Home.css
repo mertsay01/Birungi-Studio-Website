@@ -1,185 +1,25 @@
 .home {
-    height: 40vh; /* Full screen height */
-    display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center; /* Vertical center */
-    text-align: center;
-    background-color: #fff; /* Optional background */
-    padding: 0 1rem;
-  }
-  
-  .home-content {
-    max-width: 600px; /* Optional: controls width of content */
-  }
-  
-  .home h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-family: "TW Cen MT", sans-serif;
-    font-weight: bold;
-  }
-  
-  .home p {
-    font-size: 1.2rem;
-    font-family: "TW Cen MT", sans-serif;
-  }
-  /* Social Impact Section Styles */
-.social-impact-section {
-  padding: 4rem 2rem;
-  background-color: #000000; /* Changed to black background */
-  position: relative;
-  overflow: hidden;
-  color: white; /* Adding white text for better contrast */
-}
-
-.social-impact-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/path-to-honeycomb-pattern.png'); /* Add a subtle honeycomb pattern if available */
-  opacity: 0.05;
-  z-index: 0;
-}
-
-.social-impact-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-
-.social-impact-content h2 {
-  font-size: 2.5rem;
-  color: #F36E26; /* Keeping the gold color for headings */
+  height: 40vh; /* Full screen height */
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center; /* Vertical center */
   text-align: center;
-  margin-bottom: 3rem;
-  font-weight: 700;
+  background-color: #fff; /* Optional background */
+  padding: 0 1rem;
 }
 
-.impact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+.home-content {
+  max-width: 600px; /* Optional: controls width of content */
 }
 
-.impact-card {
-  background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent white for cards */
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
-  animation: fadeIn 0.8s ease-out forwards;
-  opacity: 0;
-  backdrop-filter: blur(5px);
-}
-
-/* Animation for cards to appear with delay */
-.impact-card:nth-child(1) { animation-delay: 0.1s; }
-.impact-card:nth-child(2) { animation-delay: 0.3s; }
-.impact-card:nth-child(3) { animation-delay: 0.5s; }
-.impact-card:nth-child(4) { animation-delay: 0.7s; }
-
-.impact-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 15px 30px rgba(230, 168, 23, 0.2); /* Golden glow on hover */
-  background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter on hover */
-}
-
-.impact-card h3 {
-  color: #F36E26; /* Gold color for card headings */
-  font-size: 1.5rem;
+.home h1 {
+  font-size: 3rem;
   margin-bottom: 1rem;
-  position: relative;
-  padding-bottom: 0.5rem;
+  font-family: "TW Cen MT", sans-serif;
+  font-weight: bold;
 }
 
-.impact-card h3::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #F36E26;
-  transition: width 0.3s ease;
+.home p {
+  font-size: 1.2rem;
+  font-family: "TW Cen MT", sans-serif;
 }
-
-.impact-card:hover h3::after {
-  width: 50px;
-}
-
-.impact-card p {
-  color: #cccccc; /* Light gray text for better readability on dark background */
-  line-height: 1.6;
-}
-
-/* Animation keyframes */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Add a pulsing animation for an element inside the card (optional) */
-.impact-card::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #F36E26;
-  opacity: 0.7;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.3;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .social-impact-section {
-    padding: 3rem 1rem;
-  }
-  
-  .social-impact-content h2 {
-    font-size: 2rem;
-  }
-  
-  .impact-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* For intersection observer animation control */
-.social-impact-section:not(.in-view) .impact-card {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.social-impact-section.in-view .impact-card {
-  animation-play-state: running;
-}
-
-  
