@@ -1,55 +1,35 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { getCurrentLanguage, changeLanguage } from "../../utils/languageState"
 import "./LanguageSelector.css"
 
 const languages = [
   { code: "en", name: "English", flag: "🇺🇸" },
-  { code: "nl", name: "nederlands", flag: "nl" },
+  { code: "nl", name: "Nederlands", flag: "🇳🇱" },
   { code: "es", name: "Español", flag: "🇪🇸" },
   { code: "fr", name: "Français", flag: "🇫🇷" },
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
   { code: "it", name: "Italiano", flag: "🇮🇹" },
   { code: "pt", name: "Português", flag: "🇵🇹" },
   { code: "ja", name: "日本語", flag: "🇯🇵" },
-
 ]
 
-function LanguageSelector({ onLanguageChange, showOnLoad = true, currentLanguage }) {
+function LanguageSelector({ showOnLoad = true }) {
   const [isOpen, setIsOpen] = useState(false)
-  const [selectedLanguage, setSelectedLanguage] = useState(currentLanguage || "en")
-
-  // Update local state when prop changes
-  useEffect(() => {
-    if (currentLanguage && currentLanguage !== selectedLanguage) {
-      setSelectedLanguage(currentLanguage)
-    }
-  }, [currentLanguage])
+  const [selectedLanguage, setSelectedLanguage] = useState(getCurrentLanguage())
 
   useEffect(() => {
-    // Check if language is already stored
-    const storedLanguage = localStorage.getItem("preferredLanguage")
-
-    if (storedLanguage) {
-      setSelectedLanguage(storedLanguage)
-      if (onLanguageChange) {
-        onLanguageChange(storedLanguage)
-      }
-    } else if (showOnLoad) {
-      // Show popup on first visit
+    // Show popup on first visit if showOnLoad is true and no language is stored
+    if (showOnLoad && !localStorage.getItem("preferredLanguage")) {
       setIsOpen(true)
     }
-  }, [showOnLoad, onLanguageChange])
+  }, [showOnLoad])
 
   const handleLanguageSelect = (languageCode) => {
     console.log(`Language selected: ${languageCode}`)
     setSelectedLanguage(languageCode)
-    localStorage.setItem("preferredLanguage", languageCode)
-
-    if (onLanguageChange) {
-      onLanguageChange(languageCode)
-    }
-
+    changeLanguage(languageCode)
     setIsOpen(false)
   }
 
