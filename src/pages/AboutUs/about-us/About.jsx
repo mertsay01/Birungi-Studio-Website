@@ -9,7 +9,7 @@ function About() {
         <div className="story-row">
           <div className="story-image"></div>
           <div className="story-content">
-            <h3 className="story-heading">LOREM IPSUM DOLOR SIT</h3>
+            <h3 className="story-heading">Social Impact Gamification</h3>
             <p className="story-text">
             We are Brungi studio, a social impact gaming studio! 
             At Birungi we strive for experiences that create meaningful impact, 
