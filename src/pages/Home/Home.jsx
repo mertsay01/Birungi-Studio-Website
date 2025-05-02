@@ -5,6 +5,11 @@ import '../../Components/GamesSection/GamesSection'
 import GamesSection from "../../Components/GamesSection/GamesSection";
 //import BeeAnimation from "../../Components/BeeAnimation/BeeAnimation";
 import Partner from "../../Components/Partner/partner";
+import ImpactCard from './ImpactCard/ImpactCard';
+
+
+
+
 
 
 
@@ -23,6 +28,7 @@ const Home = () => {
         </div>
         
         </section> 
+        <ImpactCard />
         <GamesSection />
         <Partner />
       
