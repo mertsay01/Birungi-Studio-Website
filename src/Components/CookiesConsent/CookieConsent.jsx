@@ -1,12 +1,13 @@
 "use client"
 import "./CookieConsent.css"
 
-const CookieConsent = ({ onAccept, onDecline }) => {
+const CookieConsent = ({ onAccept, onDecline, onClose }) => {
   console.log("CookieConsent component rendered")
 
   return (
     <div className="cookie-consent-container">
       <div className="cookie-consent">
+      <button className="close-button" onClick={onClose}>✕</button>
         <div className="cookie-content">
           <h2>Cookie Consent</h2>
           <p>

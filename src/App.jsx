@@ -49,6 +49,7 @@ function App() {
     // Here you would typically ensure no non-essential cookies are set
     console.log("Cookies declined")
   }
+  const handleClose = () => setShowCookieConsent(false);
   return (
     <>
     <Router>
@@ -66,7 +67,7 @@ function App() {
       </Suspense>
       <Footer />
     </Router>
-    {showCookieConsent && <CookieConsent onAccept={handleAcceptCookies} onDecline={handleDeclineCookies} />}
+    {showCookieConsent && <CookieConsent onAccept={handleAcceptCookies} onDecline={handleDeclineCookies} onClose={handleClose}/>}
     </>
   );
 }

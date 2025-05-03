@@ -1,18 +1,19 @@
 .cookie-consent-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    left: 20px;
+    bottom: 20px;
+    width: auto;
+    height: auto;
+    background-color: transparent;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
     z-index: 9999; /* Increased z-index to ensure it's on top */
-    backdrop-filter: blur(8px);
+    backdrop-filter: none;
   }
   
   .cookie-consent {
+    position: relative; /* ADD THIS */
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -24,7 +25,7 @@
   
   @keyframes slideUp {
     from {
-      transform: translateY(50px);
+      transform: translateY(-50px);
       opacity: 0;
     }
     to {
@@ -100,5 +101,16 @@
     .cookie-button {
       width: 100%;
     }
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 10; /* optional, to ensure it stays visible */
   }
   
