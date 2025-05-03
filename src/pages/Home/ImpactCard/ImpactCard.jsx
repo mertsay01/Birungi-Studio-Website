@@ -25,6 +25,11 @@ function ImpactCard() {
               </div>
             </div>
           </div>
+          <div className="wave-bottom">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="#ffffff" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
+    </svg>
+  </div>
         </section>
   );
 }
