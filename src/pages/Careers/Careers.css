@@ -112,13 +112,15 @@ body {
 }
 
 .featured-positions {
-  background: lightgrey;
+  background: #f07f3444;
   height: 65rem;
   padding: 4rem;
 }
 
 .positions-title{
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: 'poppins', sans-serif;
+  color: rgb(48, 8, 53);
 }
 
 .positions {
@@ -147,7 +149,7 @@ body {
 }
 
 .position button {
-  background: orange;
+  background: rgb(176, 80, 214);
   border: none;
   padding: 1rem;
   cursor: pointer;
