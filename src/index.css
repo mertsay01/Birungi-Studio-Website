@@ -7,3 +7,14 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
   margin: 0;
   padding: 0;
 }
+
+
+/* Add this to your existing CSS or create a new file */
+.app-container {
+  transition: filter 0.3s ease;
+}
+
+.app-container.blurred {
+  filter: blur(4px);
+  pointer-events: none;
+}
