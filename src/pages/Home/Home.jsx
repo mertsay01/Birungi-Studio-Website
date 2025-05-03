@@ -6,10 +6,7 @@ import GamesSection from "../../Components/GamesSection/GamesSection";
 //import BeeAnimation from "../../Components/BeeAnimation/BeeAnimation";
 import Partner from "../../Components/Partner/partner";
 import ImpactCard from './ImpactCard/ImpactCard';
-
-
-
-
+import Intro from './Intro/Intro';
 
 
 
@@ -19,15 +16,7 @@ const Home = () => {
     <div className="hero-container">
 
       <ImageSlider /> 
-       <section className="home">
-        <div className="home-content">
-        <h1>BIRUNGI</h1>
-        <p>Through gamification we teach people the impact of urbanization, pesticides on bees and how these hazards
-        play a key in their extinction.
-        </p>
-        </div>
-        
-        </section> 
+      <Intro />
         <ImpactCard />
         <GamesSection />
         <Partner />

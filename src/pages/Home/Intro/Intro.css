@@ -1,0 +1,109 @@
+.gamepass-section {
+    padding: 4rem 2rem;
+    background-color: #fcf9f9;
+    position: relative;
+    overflow: hidden;
+    
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .left-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    padding-right: 2rem;
+  }
+  
+
+  
+  .right-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    padding-left: 2rem;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  .tagline {
+    color: #FF782F;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-column, .right-column {
+      max-width: 100%;
+      padding: 1rem 0;
+    }
+  }
+  .left-content{
+    font-family: 'poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight:400;
+  }
+  
+  .bouncing-ball {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(128, 0, 107);
+    opacity: 30%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Realistic shadow */
+    animation: bounce-horizontal 16s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  }
+  .bouncing-ball2 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(204, 112, 7);
+    opacity: 30%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Realistic shadow */
+    animation: bounce-horizontal 16s cubic-bezier(0.48, -0.25, 0.17, 1.25) infinite;
+  }
+  @keyframes bounce-horizontal {
+    0% { left: 0; bottom: 0; }
+    12.5% { bottom: 100px; }
+    25% { bottom: 0; left: 25%; }
+    37.5% { bottom: 100px; }
+    50% { bottom: 0; left: calc(100% - 40px); }
+    62.5% { bottom: 100px; }
+    75% { bottom: 0; left: 75%; }
+    87.5% { bottom: 100px; }
+    100% { bottom: 0; left: 0; }
+  }
+  .green-bold {
+    font-weight: bold;
+    color: green;
+  }
+  
+  .purple-bold {
+    font-weight: bold;
+    color: #a720ac;
+  }
+  
