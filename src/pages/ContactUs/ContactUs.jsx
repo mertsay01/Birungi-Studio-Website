@@ -15,9 +15,8 @@ const ContactUs = () => {
 
       {/* Main Content */}
       <div className="contact-content">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam 
-          convallis tincidunt arcu, eu ullamcorper elit gravida non.
+        <p className="contact-description">
+          Looking to collaborate with us? Have a question or just want to say hello? We're here to listen.
         </p>
 
         {/* Contact Form */}

@@ -5,7 +5,7 @@
     justify-content: center;  
     width: 100vw;
 
-    background-image: url(../../../assets/b771dc4d82f62bb8bde543934337da76.png);
+    background-image: url(../../../assets/735dfc152540d1552d553715813f3f36.jpg);
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,12 @@
     position: relative; /* Important for pseudo-element */
     overflow: hidden; /* Prevent shadow overflow */
 }
-
+.image-h1{
+    font-family: 'poppins', sans-serif;
+}
+.image-h2{
+    font-family: 'poppins', sans-serif;
+}
 .image-body::before {
     content: '';
     position: absolute;

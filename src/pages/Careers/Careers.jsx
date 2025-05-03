@@ -5,8 +5,8 @@ const Careers = () => {
       <div className="career-page">
         <section className="hero-section">
           <div className="hero-section-text-container">
-            <h1 className="hero-section-h1">"CAREERS"</h1>
-            <p className="hero-section-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quasi?</p>
+            <h1 className="hero-section-h1">CAREERS</h1>
+            <p className="hero-section-p">Join our team </p>
           </div>
           <div className="hero-section-img-container"></div>
         </section>
@@ -15,12 +15,12 @@ const Careers = () => {
           <div className="why-work-here-text-container">
             <div className="why-work-here-wrapper">
               <h1 className="why-work-here-h1">Why Should You Work Here</h1>
-              <p className="why-work-here-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti natus repellat asperiores animi adipisci deleniti error perferendis voluptas! Aut assumenda accusantium excepturi hic atque, provident sit eligendi itaque voluptates laboriosam.
-              Dolore quo maiores obcaecati aspernatur similique voluptate dolorum, illo eum, quam laborum eius doloremque. Facere error provident deserunt quisquam minima eligendi alias, quibusdam modi ut tempora iusto rerum quidem voluptates?
-              Iure facere debitis illo, quibusdam accusantium laudantium excepturi possimus labore modi quidem cum harum quod velit provident nobis hic perspiciatis et recusandae consequatur non consequuntur placeat atque. Eligendi, amet odio.</p>
+              <p className="why-work-here-p"> Our team is comprised of experienced industry professionals working together with junior professional
+              Substantiated decision making instead of hierarchy based</p>
               <p className="why-work-here-p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusamus optio alias quo? Corrupti vitae, autem dolorem aliquid velit quis explicabo modi, tempore inventore necessitatibus voluptatum eaque! Pariatur, libero veniam.
-                Ducimus fugit qui consectetur excepturi neque, totam hic saepe repellat temporibus explicabo aut aperiam optio ratione nam eius tempora assumenda accusamus quibusdam sint commodi unde accusantium. Architecto veritatis fugiat animi.
+              We collaborate with different levels of educational institutions: college, university, 
+              scientists, and researchers. We are open to new ideas and new ways of working. In terms of diversity, our team members work together equally and we believe that
+              diversity in background: age, gender, geography, culture, religion, sexual orientation contributes to the success of our company.
               </p>
             </div>
           </div>

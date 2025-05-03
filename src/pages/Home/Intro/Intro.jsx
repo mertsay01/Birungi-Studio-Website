@@ -1,7 +1,9 @@
 import {motion} from "framer-motion";
 import './Intro.css';
 
+
 function Intro ()  {
+  
   return (
     <section className="gamepass-section">
       <div className="container">

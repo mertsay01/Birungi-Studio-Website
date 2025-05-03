@@ -69,13 +69,15 @@ body {
 }
 
 .why-work-here-h1{
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   margin: 0;
+  font-family: 'poppins', sans-serif;
 }
 
 .why-work-here-p{
   font-size: 1.5rem;
   margin-bottom: 0;
+  font-family: 'poppins', sans-serif;
 }
 
 .why-work-here-img-container{
