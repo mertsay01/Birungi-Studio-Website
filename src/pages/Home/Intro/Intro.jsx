@@ -1,4 +1,4 @@
-/*import {motion} from "framer-motion";
+import {motion} from "framer-motion";
 import './Intro.css';
 
 
@@ -36,4 +36,4 @@ function Intro ()  {
 }
 
 
-export default Intro*/
+export default Intro
