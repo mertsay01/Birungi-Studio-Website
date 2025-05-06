@@ -111,6 +111,17 @@ body {
   background-size: cover;
 }
 
+.why-work-here-img,
+.why-work-here-img-2 {
+  transition: transform 0.5s ease;
+}
+
+.why-work-here-img:hover,
+.why-work-here-img-2:hover {
+  transform: scale(1.1);
+}
+
+
 .featured-positions {
   background: #f07f3444;
   height: 65rem;
@@ -139,6 +150,14 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
+}
+
+.positions-wrapper-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.positions-wrapper-wrapper:hover {
+  transform: translateY(-20px);
 }
 
 .positions-div{

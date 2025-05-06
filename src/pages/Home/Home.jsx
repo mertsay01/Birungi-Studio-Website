@@ -6,7 +6,7 @@ import GamesSection from "../../Components/GamesSection/GamesSection";
 //import BeeAnimation from "../../Components/BeeAnimation/BeeAnimation";
 import Partner from "../../Components/Partner/partner";
 import ImpactCard from './ImpactCard/ImpactCard';
-import Intro from './Intro/Intro';
+//import Intro from './Intro/Intro';
 
 
 
@@ -17,7 +17,6 @@ const Home = () => {
     <div className="hero-container">
 
       <ImageSlider /> 
-      <Intro />
         <ImpactCard />
         <GamesSection />
         <Partner />
