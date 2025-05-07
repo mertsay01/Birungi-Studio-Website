@@ -1,0 +1,254 @@
+/* JobDetail.css */
+
+.job-detail-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .back-link:hover {
+    color: #005bb5;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .job-meta p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #777;
+  }
+  
+  .job-description, .job-requirements, .application-section {
+    margin-top: 2rem;
+  }
+  
+  .job-description h2,
+  .job-requirements h2,
+  .application-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #222;
+  }
+  
+  .job-description p {
+    line-height: 1.6;
+    white-space: pre-line;
+  }
+  
+  .job-requirements ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+  }
+  
+  .job-requirements li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .loading,
+  .error,
+  .not-found {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  .error {
+    color: #d9534f;
+  }
+  
+  .apply-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #d86320;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .apply-button:hover {
+    background-color: #a74eaa;
+  }
+  .job-detail-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  .job-meta {
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  .job-description, .job-requirements {
+    margin-bottom: 2rem;
+  }
+  
+  .job-requirements ul {
+    padding-left: 1.5rem;
+  }
+  
+  .job-requirements li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Application Form Styles */
+  .application-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+  }
+  
+  .application-form {
+    margin-top: 1.5rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  
+  .form-group {
+    flex: 1;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .file-selected {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #4a6;
+  }
+  
+  .form-group small {
+    display: block;
+    margin-top: 0.25rem;
+    color: #777;
+    font-size: 0.8rem;
+  }
+  
+  .submit-button {
+    background-color: #4a6;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #3a5;
+  }
+  
+  .submit-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .form-error {
+    background-color: #fee;
+    color: #c33;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Success Message Styles */
+  .success-message {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .success-message h3 {
+    color: #4a6;
+    margin-bottom: 1rem;
+  }
+  
+  .apply-again-button {
+    background-color: #4a6;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  
+  .apply-again-button:hover {
+    background-color: #3a5;
+  }
+  
+  /* Loading and Error States */
+  .loading, .error, .not-found {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+  }
+  
+  .error, .not-found {
+    color: #c33;
+  }
+  
