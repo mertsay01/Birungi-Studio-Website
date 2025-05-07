@@ -1,0 +1,103 @@
+.featured-positions {
+    background: #f07f3444;
+    height: 65rem;
+    padding: 4rem;
+  }
+  
+  .positions-title{
+    font-size: 3rem;
+    font-family: 'poppins', sans-serif;
+    color: rgb(48, 8, 53);
+  }
+  
+  .positions {
+    margin-top: 10rem;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columns on desktop, responsive */
+  gap: 2rem;
+  }
+  
+  .positions-wrapper-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .positions-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+  .job-description{
+    font-family: 'poppins', sans-serif;
+  }
+  .positions-div{
+    width: 30rem;
+    height: 10rem;
+    background: grey;
+    border-radius: 1rem;
+  }
+  
+  .position button {
+    background: rgb(236, 131, 61);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  .job-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+  }
+  .job-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .job-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #df721a;
+  }
+  
+  .job-card p {
+    color: #555;
+    margin: 0.25rem 0;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  .position-description {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .position {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    background-color: #e66f00;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .position:hover {
+    background-color: #cd64d1;
+  }
+  @media screen and (max-width: 1854px) {
+    html{
+      width: 100%;
+    }
+  
+    .why-work-here-p{
+      font-size: 1.3rem;
+    }
+  }
