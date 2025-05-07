@@ -10,7 +10,6 @@ const Home = lazy(() => import('./pages/Home/Home'));
 const Careers = lazy(() => import('./pages/Careers/Careers'));
 const AboutUs = lazy(() => import('./pages/AboutUs/About-us'));
 const ContactUs = lazy(() => import('./pages/ContactUs/ContactUs'));
-const JobDetail = lazy(() => import('./pages/Careers/JobDetail/JobDetail'));
 import CookieConsent from "./Components/CookiesConsent/CookieConsent"
 
 function App() {
@@ -62,7 +61,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/careers' element={<Careers />} />
-          <Route path="/jobs/:slug" element={<JobDetail />} />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/contact-us' element={<ContactUs />} />
         </Routes>

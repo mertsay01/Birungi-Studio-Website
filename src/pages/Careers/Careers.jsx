@@ -1,5 +1,4 @@
 import "../Careers/Careers.css";
-import JobOpenings from "./JobOpenings/JobOpenings";
 
 const Careers = () => {
     return (
@@ -32,8 +31,38 @@ const Careers = () => {
             </div>
           </div>
         </section>
-        <JobOpenings />
         
+        <section className="featured-positions">
+          <h2 className="positions-title">Featured Positions</h2>
+          <div className="positions">
+            <div className="positions-wrapper">
+              <div className="positions-wrapper-wrapper">
+                <div className="positions-div"></div>
+                <div className="position"><button>Apply Now</button></div>
+              </div>
+              <div className="positions-wrapper-wrapper">
+                <div className="positions-div"></div>
+                <div className="position"><button>Apply Now</button></div>
+              </div>
+              <div className="positions-wrapper-wrapper">
+                <div className="positions-div"></div>
+                <div className="position"><button>Apply Now</button></div>
+              </div>
+              <div className="positions-wrapper-wrapper">
+                <div className="positions-div"></div>
+                <div className="position"><button>Apply Now</button></div>
+              </div>
+              <div className="positions-wrapper-wrapper">
+                <div className="positions-div"></div>
+                <div className="position"><button>Apply Now</button></div>
+              </div>
+              <div className="positions-wrapper-wrapper">
+                <div className="positions-div"></div>
+                <div className="position"><button>Apply Now</button></div>
+              </div>  
+            </div>
+          </div>
+        </section>
       </div>
     );
   };

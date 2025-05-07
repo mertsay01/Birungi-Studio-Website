@@ -10,8 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@sanity/client": "^7.0.0",
-    "@sanity/image-url": "^1.1.0",
     "aos": "^2.3.4",
     "framer-motion": "^12.9.4",
     "motion": "^12.9.4",
