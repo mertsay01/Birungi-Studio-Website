@@ -156,6 +156,23 @@ body {
   color: white;
   border-radius: 0.5rem;
 }
+.why-work-here-img,
+.why-work-here-img-2 {
+  transition: transform 0.5s ease;
+}
+
+.why-work-here-img:hover,
+.why-work-here-img-2:hover {
+  transform: scale(1.1);
+}
+
+.positions-wrapper-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.positions-wrapper-wrapper:hover {
+  transform: translateY(-20px);
+}
 
 @media screen and (max-width: 1854px) {
   html{
