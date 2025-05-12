@@ -1,16 +1,17 @@
-import About from "./about-us/About";
-import Image from "./image-body/Image";
-import Partner from "../../Components/Partner/partner";
+import HeroSection from "./hero-section/hero-section"
+import AboutSection from "./about-section/about-section"
+import ValuesSection from "./values-section/values-section"
+import CTASection from "./cta-section/cta-section"
 
-function AboutUs() {
+function AboutUsPage() {
   return (
-      <>
-
-        <Image />
-        <About />
-        <Partner />
-
-      </>
-  );
+    <div className="about-us-page">
+      <HeroSection />
+      <AboutSection />
+      <ValuesSection />
+      <CTASection />
+    </div>
+  )
 }
-export default AboutUs;
+
+export default AboutUsPage
