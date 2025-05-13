@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import googlePlay1 from '../../assets/googlePlay1.png';
 import Applestore1 from '../../assets/Applestore1.png';
-import {FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa';
+import {FaInstagram, FaLinkedin, FaTwitter, FaEnvelopeOpenText} from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -19,9 +19,9 @@ export default function Footer() {
       <div className="footer-middle">
         <p className="footer-heading">Contact us on</p>
         <div className="footer-contact">
-          <p>Support email: support@birungi.studio</p>
+        <a href="" target="_blank" rel="noreferrer"><FaEnvelopeOpenText  size={40}/>Support email: support@birungi.studio</a>
         
-          <p>Business email: business@birungi.studio</p>
+        <a href="" target="_blank" rel="noreferrer"><FaEnvelopeOpenText  size={40}/>Business email: business@birungi.studio</a>
         </div> 
       </div>
 
