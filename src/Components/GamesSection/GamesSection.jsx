@@ -23,7 +23,7 @@ const GamesSection = () => {
               <div className="game-description">
                 <h4 className="game-title">I Bee Xploring</h4>
                 <p>Join the adventure in our flagship game from the Hey Honey franchise! 
-                  Navigate through beautiful landscapes, collect nectar from flowers, and discover the 
+                  Navigate through beautiful landscapes, collect nectar from flowers and
                   escape the effects of urbanization.</p>
                 <div className="game-features">
                   <span className="feature">Adventure</span>
