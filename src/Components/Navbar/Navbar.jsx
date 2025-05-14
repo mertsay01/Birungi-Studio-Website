@@ -45,7 +45,7 @@ export const Navbar = () => {
             </li>
             <li>
               <LanguageSelector onLanguageChange={(lang) => console.log(`Language changed to: ${lang}`)} showOnLoad={false} currentLanguage="en" />
-            </li>
+            </li> 
         </ul>
 
         {showScrollTop && (

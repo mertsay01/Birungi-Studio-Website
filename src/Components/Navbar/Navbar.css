@@ -16,9 +16,10 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 12rem;
+  gap: 9rem;
   margin: 0;
   padding: 0;
+  margin-top: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 

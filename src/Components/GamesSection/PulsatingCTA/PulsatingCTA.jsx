@@ -27,4 +27,4 @@ const PulsatingCTA = () => {
   );
 };
 
-export default PulsatingCTA;
+export default PulsatingCTA; 

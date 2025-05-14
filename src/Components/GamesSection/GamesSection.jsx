@@ -22,7 +22,9 @@ const GamesSection = () => {
               <img className="game-logo" src={IXploringLogo} alt="I Bee Xploring" />
               <div className="game-description">
                 <h4 className="game-title">I Bee Xploring</h4>
-                <p>Join the adventure in our flagship game from the Hey Honey franchise! Navigate through beautiful landscapes, collect honey, and discover the secrets of the hive.</p>
+                <p>Join the adventure in our flagship game from the Hey Honey franchise! 
+                  Navigate through beautiful landscapes, collect nectar from flowers, and discover the 
+                  escape the effects of urbanization.</p>
                 <div className="game-features">
                   <span className="feature">Adventure</span>
                   <span className="feature">Educational</span>
