@@ -9,12 +9,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 2rem;
+    padding: 10px 20px;
     background-color: #eca1e2;
     color: #000;
     border: none;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: 14px;
+    min-width: 120px;
+    height: auto;
     font-weight: bold;
     cursor: pointer;
     overflow: hidden;
@@ -45,10 +47,13 @@
     margin-right: 10px;
     transition: transform 0.3s ease;
     font-family: 'poppins' sans-serif;
+    font-size: 14px;
   }
   
   .button-icon {
     transition: transform 0.3s ease;
+    font-size: 14px;
+    margin-left: 8px;
   }
   
   .pulsating-button:hover {
@@ -102,8 +107,8 @@
   }
   
   .trail-dot {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background-color: #db53be;
     border-radius: 50%;
     margin-left: 5px;

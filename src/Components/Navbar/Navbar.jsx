@@ -1,10 +1,7 @@
-
 import { NavLink } from 'react-router-dom';
-
 import { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo2.png'
-
 import LanguageSelector from "../../Components/LanguageSelector/LanguageSelector";
 
 export const Navbar = () => {
@@ -27,25 +24,27 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
         <div className='nav-container'>
-        <NavLink to='/' className='logo-link'>
-            <img src={logo} alt="logo" className='logo' />
-        </NavLink>
+          <NavLink to='/' className='logo-link'>
+              <img src={logo} alt="logo" className='logo' />
+          </NavLink>
         </div>
+        
         <button className='menu-toggle' onClick={() => setIsOpen(!isOpen)}>
-         ☰
+          ☰
         </button>
-        <ul className = {isOpen ? "nav-links open": "nav-links"}>
+        
+        <ul className={isOpen ? "nav-links open" : "nav-links"}>
             <li>
                 <NavLink to ='/careers' className={({ isActive}) => isActive ? "active": ""}>Careers</NavLink>
             </li>
             <li>
-            <NavLink to ='/about-us' className={({ isActive}) => isActive ? "active": ""}>About Us</NavLink>
+              <NavLink to ='/about-us' className={({ isActive}) => isActive ? "active": ""}>About Us</NavLink>
             </li>
             <li>
-            <NavLink to ='/contact-us' className={({ isActive}) => isActive ? "active": ""}>Contact Us</NavLink>
+              <NavLink to ='/contact-us' className={({ isActive}) => isActive ? "active": ""}>Contact Us</NavLink>
             </li>
             <li>
-            <LanguageSelector onLanguageChange={(lang) => console.log(`Language changed to: ${lang}`)} showOnLoad={false} currentLanguage="en" />
+              <LanguageSelector onLanguageChange={(lang) => console.log(`Language changed to: ${lang}`)} showOnLoad={false} currentLanguage="en" />
             </li>
         </ul>
 
@@ -54,7 +53,6 @@ export const Navbar = () => {
            ↑
          </button>
         )}
-      
     </nav>
   )
 }
