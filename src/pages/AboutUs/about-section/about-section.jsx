@@ -3,6 +3,9 @@
 import { useRef } from "react"
 import { useInView } from "framer-motion"
 import "./about-section.css"
+import BeeGrateful from "../../../assets/BeeGrateful.png"
+import MAlogo from "../../../assets/MAlogo.png";
+import NVVN from "../../../assets/NVVN.jpg";
 
 function AboutSection() {
   const ref1 = useRef(null)
@@ -60,8 +63,9 @@ function AboutSection() {
               impact, and create a business that achieves ambitious goals on the global stage.
             </p>
             <div className="partner-logos">
-              <div className="partner-logo"></div>
-              <div className="partner-logo"></div>
+              <img src={BeeGrateful} className="partner-logo" alt="BeeGrateful" />
+              <img src={MAlogo} className="partner-logo" alt="MAlogo" />
+              <img src={NVVN} className="partner-logo" alt="NVVN" />  
               <div className="partner-logo"></div>
             </div>
           </div>
